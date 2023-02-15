@@ -1,36 +1,43 @@
+
+/* Footer main wrap */
 footer {
     width:100%;
     background: #2E2D25;
 }
 
+/* Footer inner wrap */
 .footer-inner,
 .footer-bottom-inner {
     width: 1200px;
     margin: auto;
 }
 
+/* footer inner top section */
 .footer-inner-top {
     display: flex;
     flex-direction: row;
     padding: 80px 0;
 }
 
+/* footer inner collumns */
 .footer-inner-collumn {
     width: 33%;
 }
 
+/* footer bottom copyright section */
 .footer-bottom {
     width: 100%;
     background: #25241d none repeat scroll 0 0;
     padding: 30px 0;
 }
 
+/* Footer copyright text */
 .copyright-text {
     color: #ffffff;
     font-size: 15px;
 }
 
-
+/* Footer left side description */
 .site-description {
     color: #fff;
     line-height: 24px;
@@ -38,11 +45,14 @@ footer {
     font-size: 15px;
 }
 
+/* Footer collumns padding */
 .footer-inner-collumn {
     padding-left: 10px;
     padding-right: 10px;
 }
 
+
+/* Footer left side contact section */
 .address,
 .phone,
 .email,
@@ -54,17 +64,19 @@ footer {
     font-size: 15px;
 }
 
+/* Footer menu headins */
 .footer-menu-heading {
     color: #ffffff;
     font-size: 16px;
-    font-weight: 900;
     line-height: 22px;
     padding-bottom: 17px;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 21px;
+    font-weight:normal;
 }
 
+/* Footer menu heading bottom border */
 .footer-menu-heading::before {
     background: #e73b49;
     bottom: 0;
@@ -74,6 +86,7 @@ footer {
     width: 40px;
 }
 
+/* Footer menu links */
 .footer-menu li a {
     color: #ffffff !important;
     text-transform: capitalize;
@@ -81,10 +94,7 @@ footer {
     font-size: 15px;
 }
 
+/* Footer menu list items */
 .footer-menu li {
     padding:4px 0px !important;
-}
-
-.footer-menu-heading {
-    font-weight:normal;
 }
