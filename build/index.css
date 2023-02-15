@@ -129,7 +129,7 @@ footer {
 /* Footer inner wrap */
 .footer-inner,
 .footer-bottom-inner {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -220,5 +220,40 @@ footer {
     padding:4px 0px !important;
 }
 
+.site-title {
+    color:#ffffff;
+}
+.site-title:hover {
+    color:#ffffff;
+}
+
+
+@media only screen and (max-width:768px) {
+    .footer-inner-collumn {
+        width: 100%;
+    }
+    
+    .footer-bottom,
+    .footer-inner-top {
+        padding: 30px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .site-title h1 {
+        font-size: 30px;
+    }
+    
+    .footer-menu li a,
+    .copyright-text,
+    .contact-area p,
+    .site-description {
+        font-size: 13px;
+    }
+    
+    .footer-menu-heading {
+        font-size: 20px;
+    }
+}
 
 /*# sourceMappingURL=index.css.map*/
