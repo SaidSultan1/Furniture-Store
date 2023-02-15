@@ -44,5 +44,13 @@
                     </div>
                 </div>
             </div>
+            <div class="header-nav">
+                    <?php 
+                        wp_nav_menu(array(
+                            'theme_location' => 'primary-menu',
+                            'menu_class' => 'nav-menu'
+                        ));
+                    ?>
+                </div>
         </div>
     </header>
