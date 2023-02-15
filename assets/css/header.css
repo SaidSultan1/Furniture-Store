@@ -1,0 +1,38 @@
+header {
+    max-width: 100%;
+}
+
+.header-inner {
+    width: 1200px;
+    margin: auto;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-top-right,
+.header-top-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-top-right ul,
+.header-top-left ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-top-right ul li a,
+.header-top-left ul li a {
+    font-size: 13px;
+    margin-right: 20px;
+    color: #ff0000;
+}
+
+.header-top-right ul { 
+    justify-content: end;
+}
