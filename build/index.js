@@ -2,6 +2,18 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./assets/css/footer.css":
+/*!*******************************!*\
+  !*** ./assets/css/footer.css ***!
+  \*******************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./assets/css/header.css":
 /*!*******************************!*\
   !*** ./assets/css/header.css ***!
@@ -61,6 +73,8 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_css_header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/css/header.css */ "./assets/css/header.css");
+/* harmony import */ var _assets_css_footer_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/css/footer.css */ "./assets/css/footer.css");
+
 
 }();
 /******/ })()

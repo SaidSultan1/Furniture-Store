@@ -1,0 +1,85 @@
+footer {
+    width:100%;
+    background: #2E2D25;
+}
+
+.footer-inner,
+.footer-bottom-inner {
+    width: 1200px;
+    margin: auto;
+}
+
+.footer-inner-top {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0;
+}
+
+.footer-inner-collumn {
+    width: 33%;
+}
+
+.footer-bottom {
+    width: 100%;
+    background: #25241d none repeat scroll 0 0;
+    padding: 30px 0;
+}
+
+.copyright-text {
+    color: #ffffff;
+}
+
+
+.site-description {
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.footer-inner-collumn {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.address,
+.phone,
+.email,
+.social-icons {
+    color: #ffffff;
+    display: block;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footer-menu-heading {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 22px;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 21px;
+}
+
+.footer-menu-heading::before {
+    background: #e73b49;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 40px;
+}
+
+.footer-menu li a {
+    color: #ffffff !important;
+    text-transform: capitalize;
+    transition: all .3s;
+    font-size: 15px;
+}
+
+.footer-menu li {
+    padding:4px 0px !important;
+}
