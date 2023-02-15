@@ -1,0 +1,120 @@
+/*!***************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/css/header.css ***!
+  \***************************************************************************************************************************************************************************/
+header {
+    max-width: 100%;
+}
+
+.header-inner {
+    width: 1200px;
+    margin: auto;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-top-right,
+.header-top-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-top-right ul,
+.header-top-left ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-top-right ul li a,
+.header-top-left ul li a {
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.header-top-right ul { 
+    justify-content: end;
+}
+
+
+
+.header-bottom {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    align-items: center;
+}
+
+.header-bottom-right, 
+.header-bottom-left {
+    width: 25%;
+}
+
+.header-bottom-center {
+    width: 50%;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f7f7;
+}
+
+.search-field {
+    outline: none;
+    border: none !important;
+    background: none;
+    margin-bottom: 0 !important;
+}
+
+.header-bottom-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-right {
+    display: flex;
+    justify-content: end;
+}
+
+.cart-button {
+    font-size: 15px;
+    color: #000000;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    padding: 22px 18px;
+    font-size: 14px;
+}
+
+.menu-item a { 
+    text-transform: uppercase;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    padding: 11px;
+}
+
+.search-icon {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+
+
+/*# sourceMappingURL=index.css.map*/
