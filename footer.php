@@ -6,7 +6,7 @@
     $lf_footer_email = get_field('footer_email', 'options');
     $lf_footer_copyright = get_field('footer_bottom_copyright_text', 'options');
 ?>
-<footer>
+<footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-inner-top">
             <div class="footer-inner-collumn-1 footer-inner-collumn">
