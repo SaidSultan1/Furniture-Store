@@ -12,5 +12,9 @@ function fs_styles() {
   add_theme_support( 'custom-logo' );
 
   register_nav_menus(
-    array('primary-menu'=>'Top Menu')
+    array(
+      'primary-menu'=>'Top Menu',
+      'footer-menu'=>'Footer Menu'
+      )
   );
+
