@@ -1,0 +1,25 @@
+{
+  "name": "furniturestore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaidSultan1/Furniture-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaidSultan1/Furniture-store/issues"
+  },
+  "homepage": "https://github.com/SaidSultan1/Furniture-store#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^25.3.0"
+  }
+}
