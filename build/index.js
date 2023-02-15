@@ -61,6 +61,8 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_css_header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/css/header.css */ "./assets/css/header.css");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '../assets/css/footer.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
 
 }();
 /******/ })()
