@@ -10,3 +10,7 @@ function fs_styles() {
   add_action( 'wp_enqueue_scripts', 'fs_styles' );
 
   add_theme_support( 'custom-logo' );
+
+  register_nav_menus(
+    array('primary-menu'=>'Top Menu')
+  );
