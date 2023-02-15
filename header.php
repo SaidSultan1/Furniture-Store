@@ -30,13 +30,9 @@
                     </form>
                 </div>
                 <div class="header-bottom-center">
-                    <h1 class="site-title">
-                        <?php
-                            if ( function_exists( 'the_custom_logo' ) ) {
-                               echo the_custom_logo();
-                            }
-                        ?>
-                    </h1>
+                    <div class="site-logo">
+                        <?php echo esc_url(the_custom_logo());?>
+                    </div>
                 </div>
                 <div class="header-bottom-right">
                     <div class="shop-cart">
@@ -45,12 +41,12 @@
                 </div>
             </div>
             <div class="header-nav">
-                    <?php 
-                        wp_nav_menu(array(
-                            'theme_location' => 'primary-menu',
-                            'menu_class' => 'nav-menu'
-                        ));
-                    ?>
-                </div>
+                <?php 
+                     wp_nav_menu(array(
+                        'theme_location' => 'primary-menu',
+                        'menu_class' => 'nav-menu'
+                    ));
+                ?>
+            </div>
         </div>
     </header>
