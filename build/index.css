@@ -274,6 +274,11 @@ header {
     .footer-menu-heading {
         font-size: 20px;
     }
+
+    .footer-bottom {
+        max-width: 100% !important;
+        width: 85% !important;
+    }
 }
 
 /*# sourceMappingURL=index.css.map*/
