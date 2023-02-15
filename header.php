@@ -11,14 +11,14 @@
             <div class="header-top">
                 <div class="header-top-left">
                     <ul>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Create an Account</a></li>
+                        <li><a href="<?php echo esc_url(site_url(" /my-account ")) ?>">My Account</a></li>
+                        <li><a href="<?php echo esc_url(site_url(" /create-account ")) ?>">Create an Account</a></li>
                     </ul>
                 </div>
                 <div class="header-top-right">
                     <ul>
-                    <li><a href="#">Wish List</a></li>
-                    <li><a href="#">Check out</a></li>
+                    <li><a href="<?php echo esc_url(site_url(" /wish-list ")) ?>">Wish List</a></li>
+                    <li><a href="<?php echo esc_url(site_url(" /checkout ")) ?>">Check out</a></li>
                     </ul>
                 </div>
             </div>
