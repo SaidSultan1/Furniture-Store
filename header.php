@@ -22,5 +22,27 @@
                     </ul>
                 </div>
             </div>
+            <div class="header-bottom">
+                <div class="header-bottom-left">
+                    <form class="search-form">
+                        <input type="text" class="search-field">
+                        <button class="search-btn"><i class="fa fa-search search-icon"></i></button>
+                    </form>
+                </div>
+                <div class="header-bottom-center">
+                    <h1 class="site-title">
+                        <?php
+                            if ( function_exists( 'the_custom_logo' ) ) {
+                               echo the_custom_logo();
+                            }
+                        ?>
+                    </h1>
+                </div>
+                <div class="header-bottom-right">
+                    <div class="shop-cart">
+                       <a class="cart-button" href="<?php echo esc_url(site_url(" /cart ")) ?>">My Cart-items(2)</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
