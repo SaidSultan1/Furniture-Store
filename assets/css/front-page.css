@@ -1,0 +1,118 @@
+/* Home page main wrapper */
+.lf-main-wrapper {
+    max-width: 100%;
+}
+
+/* Banner slider slide */
+.banner-carousel-item {
+    position: relative;
+    max-width: 1500px;
+}
+
+/* sldier Headings */
+.lf-sale-type {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+/* slider Heading */
+.lf-sale-brand,
+.lf-sale-percentage {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: -6px;
+}
+
+/* Slider content wrap */
+.slider-content {
+    position: absolute;
+    top:44%;
+    transform: translateY(-50%);
+    left: 8%;
+}
+
+/* Primary Button */
+.primary-btn {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 42px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    vertical-align: top;
+    background: #e73b49;
+}
+
+/* Primary Button Hover */
+.primary-btn:hover{
+    color: #ffffff;
+}
+
+/* Slider btn */
+.slider-btn {
+    margin-top: 35px;
+}
+
+/* Carousel Nav Arrows */
+.lf-home-banner .owl-nav {
+    display: none;
+}
+
+/* Carousel Dots Wrapper */
+.lf-home-banner .owl-dots {
+    width: 100%;
+    position: absolute;
+    top: 94%;
+    column-gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Carousel Dots */
+.lf-home-banner .owl-dots .owl-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+} 
+
+/* Carousel Dot Active button  */
+.lf-home-banner .owl-dots .active {
+    background-color: #e73b49;
+}
+
+
+@media only screen and (max-width:768px){
+    .lf-sale-type {
+        font-size: 9px;
+    }
+
+    .lf-sale-brand, .lf-sale-percentage {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
+    .primary-btn {
+        font-weight: 700;
+        padding: 7px 9px;
+        font-size: 9px;
+        vertical-align: middle;
+    }
+
+    .slider-content {
+        top: 55%;
+        transform: translateY(-60%);
+        left: 5%;
+    }
+
+    .slider-btn {
+        margin-top: 3px ;
+    }
+
+    .lf-home-banner .owl-dots {
+        top: 88%;
+    }
+}
