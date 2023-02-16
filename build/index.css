@@ -372,7 +372,7 @@
 /* Banner slider slide */
 .banner-carousel-item {
     position: relative;
-    max-width: 1500px;
+    max-width: 100%;
 }
 
 /* sldier Headings */
