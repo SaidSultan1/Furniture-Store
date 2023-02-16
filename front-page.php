@@ -3,7 +3,7 @@ get_header(); ?>
 
 <div class="lf-main-wrapper">
     <div class="lf-home-banner">
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel owl-theme banner-carousel">
             <?php
                 $lf_slider_slide = get_field('slider_slides');
 
@@ -31,6 +31,49 @@ get_header(); ?>
                     endforeach;
                 endif;
             ?>
+        </div>
+    </div>
+    <div class="ls-home-bottom-contianer">
+        <div class="product-section">
+            <div class="product-cards">
+                <div class="product-slider-heading-wrapper">
+                    <div class="product-heading">
+                        <h1>NEW PRODUCTS</h1>
+                    </div>
+                    <div class="custom-owl-nav product-nav-arrows"></div>
+                </div>
+                <div class="owl-carousel owl-theme product-carousel">
+                    <?php
+                        $product_arg = array(
+                            'post_type' => 'product',
+                            'posts_per_page' => -1
+                        );
+
+                        $product_loop = new WP_Query($product_arg);
+
+                        while ($product_loop->have_posts()): $product_loop->the_post();
+                    ?>
+                    <div class="item">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <a href="<?php esc_url(the_permalink()) ?>">
+                                    <?php the_post_thumbnail('medium', array('class' => 'img-fluid')); ?>
+                                </a>
+                            </div>
+                            <div class="product-details">
+                                <h2 class="product-title">
+                                    <a href="<?php esc_url(the_permalink()) ?>"><?php esc_html(the_title()) ?></a>
+                                </h2>
+                                <span class="product-price"><?php echo get_woocommerce_currency_symbol() . get_post_meta( get_the_ID(), '_price', true ); ?></span>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                        endwhile;
+                        wp_reset_query();
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>

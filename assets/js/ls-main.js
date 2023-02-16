@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
 // Owl Carousel Script
 
 jQuery(document).ready(function() {
-    jQuery('.owl-carousel').owlCarousel({
+    jQuery('.banner-carousel').owlCarousel({
       loop:true,
       dots: true,
       margin:10,
@@ -38,6 +38,30 @@ jQuery(document).ready(function() {
               items:1
           }
       }
+    });
+  });
+
+// owl carousel 2 
+
+jQuery(document).ready(function() {
+    jQuery('.product-carousel').owlCarousel({
+      loop:false,
+      dots: true,
+      margin:10,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:4
+          }
+      },
+      nav: false,
+      navContainer: '.custom-owl-nav',
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
   });
   
