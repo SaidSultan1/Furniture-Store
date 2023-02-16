@@ -453,15 +453,19 @@
 
 
 @media only screen and (max-width:768px){
+
+    /* Banner Slider heading */
     .lf-sale-type {
         font-size: 9px;
     }
 
+    /* Banner Slider heading */
     .lf-sale-brand, .lf-sale-percentage {
         font-size: 13px;
         margin-bottom: 2px;
     }
 
+    /* Primary Button */
     .primary-btn {
         font-weight: 700;
         padding: 7px 9px;
@@ -469,16 +473,19 @@
         vertical-align: middle;
     }
 
+    /* Slider content wrapper */
     .slider-content {
         top: 55%;
         transform: translateY(-60%);
         left: 5%;
     }
 
+    /* Slider button container */
     .slider-btn {
         margin-top: 3px ;
     }
 
+    /* Slider dots */
     .lf-home-banner .owl-dots {
         top: 88%;
     }
