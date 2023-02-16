@@ -16,7 +16,7 @@ get_header(); ?>
                         $slider_button_text = $slide['slider_button_text'];
                         $slider_button_url = $slide['slider_button_url']; 
                         ?>
-                    <div class="item banner-carousel-item">
+                    <div class="item banner-slides">
                         <img src="<?php echo esc_attr($background_image['url']); ?>" alt="" class="slider-image">
                         <div class="slider-content">
                             <h1 class="lf-sale-type"><?php echo esc_html($sale_type); ?></h1>
