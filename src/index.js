@@ -1,3 +1,3 @@
 import "../assets/css/header.css"
 import "../assets/css/footer.css"
-import "../assets/js/header"
+import "../assets/css/front-page.css"
