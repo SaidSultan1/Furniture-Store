@@ -9,6 +9,7 @@ function lf_styles() {
     wp_enqueue_style( 'lf-fonts', get_template_directory_uri(). '/assets/fonts.css' );
     wp_enqueue_style( 'lf-styles', get_template_directory_uri(). '/build/index.css' );
     wp_enqueue_style("font-awesome","//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+    wp_enqueue_script( 'lf-scripts', get_template_directory_uri(). '/assets/js/header.js', array('jquery'), true );
 }
 add_action( 'wp_enqueue_scripts', 'lf_styles' );
 
