@@ -62,7 +62,6 @@ body {
   
   a:hover {
     color:#ff0000;
-    text-decoration: underline;
   }
   
   input[type="text"],
