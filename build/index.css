@@ -1,20 +1,25 @@
 /*!***************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/css/header.css ***!
   \***************************************************************************************************************************************************************************/
-header {
+
+/* main header wrapper */
+.ls-site-header {
     max-width: 100%;
 }
 
+/* header wrapper inner */
 .header-inner {
     max-width: 1200px;
     margin: auto;
 }
 
+/* header top */
 .header-top {
     display: flex;
     flex-direction: row;
 }
 
+/* Header top right and left width and display flex */
 .header-top-right,
 .header-top-left {
     width: 50%;
@@ -22,6 +27,7 @@ header {
     flex-direction: row;
 }
 
+/* Header top right and left ul width and display  */
 .header-top-right ul,
 .header-top-left ul {
     width: 100%;
@@ -29,18 +35,19 @@ header {
     flex-direction: row;
 }
 
+/* Header top buttons */
 .header-top-right ul li a,
 .header-top-left ul li a {
     font-size: 13px;
     margin-right: 20px;
 }
 
+/* Header top right button container */
 .header-top-right ul { 
     justify-content: end;
 }
 
-
-
+/* Header Bottom */
 .header-bottom {
     display: flex;
     flex-direction: row;
@@ -50,6 +57,7 @@ header {
     align-items: center;
 }
 
+/* Header Bottom Section Width */
 .header-bottom-right, 
 .header-bottom-left {
     width: 25%;
@@ -59,12 +67,14 @@ header {
     width: 50%;
 }
 
+/* Search Form styles */
 .search-form {
     display: flex;
     flex-direction: row;
     background-color: #f7f7f7;
 }
 
+/* Search Field Input */
 .search-field {
     outline: none;
     border: none !important;
@@ -72,22 +82,27 @@ header {
     margin-bottom: 0 !important;
 }
 
+/* Header center  */
 .header-bottom-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Header bottom right */
 .header-bottom-right {
     display: flex;
     justify-content: end;
 }
 
+
+/* Header cart button */
 .cart-button {
     font-size: 15px;
     color: #000000;
 }
 
+/* Nav menu */
 .nav-menu {
     display: flex;
     flex-direction: row;
@@ -95,36 +110,77 @@ header {
     align-items: center;
 }
 
+/* Nav menu item */
 .menu-item {
     padding: 22px 18px;
     font-size: 14px;
 }
 
+/* Nav menu item links */
 .menu-item a { 
     text-transform: uppercase;
 }
 
+/* Search button */
 .search-btn {
     background: none;
     border: none;
     padding: 11px;
 }
 
+/* Search icon  */
 .search-icon {
     font-weight: 100;
     font-size: 15px;
 }
 
+/* Nav menu mobile */
+.nav-menu-toggle-container {
+    width: 70%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+/* Hamburger menu icon */
+.nav-toggle i {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Nav menu heading */
+.nav-menu-heading {
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+/* Active nav menu */
+.header-nav-active {
+    display: block !important;
+    opacity: 1 !important;
+    transition: opacity 1s ease;
+}
+
+/******** 
+** MEDIA QUERY
+*********/
+
 @media only screen and (max-width:768px) {
+    /* Header top */
     .header-top {
         display: none !important;
     }
 
+    /* Header bottom */
     .header-bottom {
         flex-direction: column;
         row-gap: 10px;
+        padding: 32px 0;
     }
 
+    /* Header bottom left right width */
     .header-bottom-right, .header-bottom-left {
         width:70%;
         display: flex;
@@ -132,8 +188,33 @@ header {
         align-items: center;
     }
 
+    /* Header nav menu  */
     .header-nav {
         display: none;
+        opacity: 0;
+    }
+
+    /* Header nav menu main wrapper  */
+    .header-nav-menu {
+        background-color: #262626;
+        padding: 10px 0px;
+    }
+
+    /* header nav menu item wrap */
+    .nav-menu {
+        flex-direction: column;
+        background: #ffff;
+    }
+
+    /* nav items */
+    .menu-item {
+        border-bottom: 1px solid;
+        padding: 11px 18px;
+    }
+
+    /* Nav menu toggle container */
+    .nav-menu-toggle-container {
+        display: flex;
     }
 }
 /*!***************************************************************************************************************************************************************************!*\

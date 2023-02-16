@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header class="fs-site-header">
+    <header class="ls-site-header">
         <div class="header-inner">
             <div class="header-top">
                 <div class="header-top-left">
@@ -40,13 +40,21 @@
                     </div>
                 </div>
             </div>
-            <div class="header-nav">
-                <?php 
-                     wp_nav_menu(array(
-                        'theme_location' => 'primary-menu',
-                        'menu_class' => 'nav-menu'
-                    ));
-                ?>
+            <div class="header-nav-menu">
+                <div class="nav-menu-toggle-container">
+                    <h3 class="nav-menu-heading">MENU</h3>
+                    <div class="nav-toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <div class="header-nav">
+                    <?php 
+                        wp_nav_menu(array(
+                            'theme_location' => 'primary-menu',
+                            'menu_class' => 'nav-menu'
+                        ));
+                    ?>
+                </div>
             </div>
         </div>
     </header>
