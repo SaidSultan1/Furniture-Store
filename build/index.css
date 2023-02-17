@@ -666,6 +666,15 @@
     .product-image {
         width: 252px;
     }
+
+    .lf-services-column {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .lf-services-container {
+        row-gap: 28px;
+    }
 }
 
 /*# sourceMappingURL=index.css.map*/
