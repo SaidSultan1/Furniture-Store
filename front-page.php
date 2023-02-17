@@ -33,6 +33,29 @@ get_header(); ?>
             ?>
         </div>
     </div>
+    <div class="lf-services-wrapper">
+        <?php 
+            $services_section = get_field('services_section');
+        ?>
+        <div class="lf-services-container">
+            <?php
+                $lf_services = get_field('services_section');
+                if ($lf_services) {
+                    foreach ($lf_services as $services) { ?>
+                        <div class="lf-services-column">
+                            <div class="service-icon">
+                                <img src="<?php echo esc_url($services['services_icon']['url']); ?>" alt="<?php echo esc_attr($services['services_icon']['alt']); ?>">
+                            </div>
+                            <div class="service-content">
+                                <h4 class="service-content-heading"><?php echo esc_html($services['services_heading']); ?></h4>
+                                <p class="service-content-description"><?php echo esc_html($services['services_description']); ?></p>
+                            </div>
+                        </div>    
+                <?php }
+                }
+            ?>
+        </div>
+    </div>
     <div class="ls-home-bottom-contianer">
         <div class="product-section">
             <div class="product-cards">
@@ -53,11 +76,11 @@ get_header(); ?>
 
                         while ($product_loop->have_posts()): $product_loop->the_post();
                     ?>
-                    <div class="item">
+                    <div class="item product-card-slider">
                         <div class="product-card">
                             <div class="product-image">
                                 <a href="<?php esc_url(the_permalink()) ?>">
-                                    <?php the_post_thumbnail('medium', array('class' => 'img-fluid')); ?>
+                                <img src="<?php echo esc_url(the_post_thumbnail_url(get_the_ID())); ?>" alt="">
                                 </a>
                             </div>
                             <div class="product-details">

@@ -169,9 +169,57 @@
     transition: transform 0.3s ease;
 }
 
-.lf-services-contaner {
+.lf-services-wrapper {
+    background-color: #f8f8f8;
+}
+
+.lf-services-container {
     display: flex;
     flex-direction: row;
+    padding: 25px 0;
+    max-width: 1200px;
+    margin: auto;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lf-services-column {
+    width: 24%;
+    padding: 0px 5px;
+}
+
+.service-icon {
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+    height: 50px;
+    line-height: 45px;
+    margin-right: 16px;
+    text-align: center;
+    width: 50px;
+    float: left;
+    position: absolute;
+}
+
+.service-content {
+    margin-left: 69px;
+    margin-top: 0;
+    position: relative;
+    top: 6px;
+}
+
+.service-content-heading {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 1px;
+}
+
+.service-content-description {
+    font-size: 13px;
+}
+
+.service-icon img {
+    vertical-align: middle;
 }
 
 /* Product detail container */
