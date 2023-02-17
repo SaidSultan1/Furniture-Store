@@ -395,7 +395,7 @@
 /* Slider content wrap */
 .slider-content {
     position: absolute;
-    top:44%;
+    top: 44%;
     transform: translateY(-50%);
     left: 8%;
 }
@@ -413,7 +413,7 @@
 }
 
 /* Primary Button Hover */
-.primary-btn:hover{
+.primary-btn:hover {
     color: #ffffff;
 }
 
@@ -444,19 +444,21 @@
     height: 12px;
     background-color: #ffffff;
     border-radius: 50%;
-} 
+}
 
 /* Carousel Dot Active button  */
 .lf-home-banner .owl-dots .active {
     background-color: #e73b49;
 }
 
+/* home product container  */
 .ls-home-bottom-contianer {
     max-width: 1200px;
     margin: auto;
     margin-top: 80px;
 }
 
+/* Product Slider heading wrap */
 .product-slider-heading-wrapper {
     display: flex;
     flex-direction: row;
@@ -465,11 +467,13 @@
     position: relative;
 }
 
+/* Product Heading */
 .product-heading h1 {
     font-size: 17px;
     margin-bottom: 45px;
 }
 
+/* Proudct heading border */
 .product-heading h1::after {
     background: #e73b49;
     bottom: 24px;
@@ -480,6 +484,7 @@
     width: 60px;
 }
 
+/* product heading border 2  */
 .product-heading h1::before {
     background: #e1e1e1 none repeat scroll 0 0;
     bottom: 33px;
@@ -491,7 +496,9 @@
     top: 45px;
 }
 
-.owl-next, .owl-prev {
+/* Product slider nav arrows */
+.owl-next,
+.owl-prev {
     background: none;
     font-size: 23px;
     border: none;
@@ -499,57 +506,69 @@
     cursor: pointer;
 }
 
+/* Product Cards */
 .product-card {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  .product-image {
-    height: 200px;
+}
+
+/* Product Image */
+.product-image {
+    height: 264px;
+    width: 211px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
-  
-  .product-image img {
+}
+
+/* Product image height */
+.product-image a img,
+.product-image a {
+    height: inherit;
+}
+
+.product-image img {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
-  }
-  
-  .product-image img:hover {
-    transform: scale(1.1);
-  }
-  
-  .product-details {
+}
+
+.lf-services-contaner {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Product detail container */
+.product-details {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-  }
-  
-  .product-title {
-    font-size: 18px;
-    margin: 10px 0;
+}
+
+/* Product title */
+.product-title {
+    font-size: 16px;
     text-decoration: none;
     color: #333;
-  }
-  
-  .product-price {
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+/* Product price */
+.product-price {
     font-size: 16px;
     font-weight: bold;
-    color: #f00;
-  }
-  
+    color: #333333;
+}
 
-@media only screen and (max-width:768px){
+
+@media only screen and (max-width:768px) {
 
     /* Banner Slider heading */
     .lf-sale-type {
@@ -557,7 +576,8 @@
     }
 
     /* Banner Slider heading */
-    .lf-sale-brand, .lf-sale-percentage {
+    .lf-sale-brand,
+    .lf-sale-percentage {
         font-size: 13px;
         margin-bottom: 2px;
     }
@@ -579,14 +599,25 @@
 
     /* Slider button container */
     .slider-btn {
-        margin-top: 3px ;
+        margin-top: 3px;
     }
 
     /* Slider dots */
     .lf-home-banner .owl-dots {
         top: 88%;
     }
-}
 
+    .ls-home-bottom-contianer {
+        width: 300px;
+    }
+
+    .product-carousel .owl-stage-outer .owl-stage .owl-item {
+        width: 300px !important;
+    }
+
+    .product-image {
+        width: 252px;
+    }
+}
 
 /*# sourceMappingURL=index.css.map*/

@@ -45,18 +45,19 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(function() {
     jQuery('.product-carousel').owlCarousel({
-      loop:false,
+      loop:true,
+      center: true,
       dots: true,
-      margin:10,
+      margin:15,
       responsive:{
           0:{
               items:1
           },
           600:{
-              items:3
+              items:1
           },
           1000:{
-              items:4
+              items:5
           }
       },
       nav: false,
