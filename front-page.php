@@ -98,6 +98,31 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+        <div class="lf-product-section">
+            <h1 class="product-category-heading">Product Category</h1>
+            <div class="product-section-column">
+                <?php
+                    $product_categories = get_terms(array(
+                        'taxonomy' => 'product_cat',
+                        'hide_empty' => false,
+                        'number' => 3,
+                        'orderby' => 'name',
+                        'order' => 'DESC'
+                    ));
+                    foreach ($product_categories as $category) :
+                        $thumbnail_id = get_term_meta($category->term_id, 'thumbnail_id', true);
+                        $thumbnail_url = wp_get_attachment_url($thumbnail_id);
+                        $category_link = get_term_link($category);
+                ?>
+                        <div class="lf-product-column-50 lf-product-column">
+                            <a href="<?php echo esc_url( $category_link ); ?>" class="product-category-name"><?php echo esc_html( $category->name ); ?></a>
+                            <a href="<?php echo esc_url($category_link); ?>">
+                                <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($category->name); ?>">
+                            </a>
+                        </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
     </div>
 </div>
 
