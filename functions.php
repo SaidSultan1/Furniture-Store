@@ -71,3 +71,8 @@ function woocommerce_support() {
     add_theme_support("wc-product-gallery-lightbox");
     add_theme_support("wc-product-gallery-slider");
 }
+
+add_action( 'init', 'remove_woocommerce_content_wrapper_end' );
+function remove_woocommerce_content_wrapper_end() {
+    remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
+}
