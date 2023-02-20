@@ -759,6 +759,23 @@
     .lf-services-container {
         row-gap: 28px;
     }
+
+    .product-section-column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    
+    .lf-product-column-50,
+    .lf-product-section a img {
+        height: 250px;
+    }
+    
+    .product-category-name {
+        width: -moz-max-content;
+        width: max-content;
+        font-size: 11px;
+    }
 }
 
 /*# sourceMappingURL=index.css.map*/
