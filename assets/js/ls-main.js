@@ -65,3 +65,26 @@ jQuery(document).ready(function () {
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
 });
+
+jQuery(document).ready(function () {
+    jQuery('.thumbnail-carousel').owlCarousel({
+        loop: true,
+        center: true,
+        dots: true,
+        margin: 15,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 5
+            }
+        },
+        nav: false,
+        navContainer: '.custom-owl-nav',
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    });
+});

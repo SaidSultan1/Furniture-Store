@@ -1,0 +1,161 @@
+/* Single proudct main container */
+.lf-single-product-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Single proudct price  */
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+/* Single product add to cart button */
+.woocommerce div.product form.cart .button {
+    background: #A4BEBB;
+    padding: 18px;
+    border-radius: 42px;
+    border: 1px solid #A4BEBB;
+}
+
+/* /* Single product add to cart button */ */
+.woocommerce div.product form.cart .button:hover {
+    color: #A4BEBB;
+    background-color: white;
+    opacity: 1;
+    border: 1px solid #A4BEBB;
+}
+
+/* Single Prouct cart form dropdown */
+.woocommerce div.product form.cart div.quantity {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    margin-right: 20px;
+}
+
+/* cart form variations  */
+.woocommerce div.product form.cart .variations {
+    text-align: left;
+}
+
+/* cart form variation dropdown */
+.woocommerce div.product form.cart .variations select {
+    padding: 10px;
+    background: #A4BEBB;
+    color:#ffff;
+}
+
+
+.woocommerce div.product form.cart .variations select:focus-visible {
+    outline: 1px solid #A4BEBB;
+}
+
+/* Product descritpion tabs */
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    background-color: #A4BEBB;
+    color: #ffff;
+}
+
+/* Product descritpion tabs links */
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+    color: #ffff;
+}
+
+/* Product descritpion tabs links hover */
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
+    color: #ffff;
+}
+
+/* Product descritpion tabs links active */
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+    color: #000000;
+}
+
+/* image slider nav */
+.flex-control-nav {
+    display: flex;
+}
+
+/* Image slider main image */
+.flex-viewport {
+    height: 400px !important;
+}
+
+@media only screen and (max-width:768px) {
+    
+    /* Product title */
+    .woocommerce div.product .product_title {
+        font-size: 28px;
+    }
+
+    /* product image */
+    .woocommerce div.product div.images img {
+        height: 277px !important;
+        object-fit: cover;
+    }
+
+    /* cart form variation dropdown */
+    .woocommerce div.product form.cart .variations {
+        margin-bottom: 2em;
+    }
+
+    /* cart form variation dropdown */
+    .woocommerce div.product form.cart .variations label {
+        font-size: 13px;
+    }
+    
+    /* cart form variation dropdown */
+    .woocommerce div.product form.cart .variations select {
+        padding: 8px;
+        margin-right: 0.3em;
+    }
+    
+    /* Single product add to cart button */
+    .woocommerce div.product form.cart .button {
+        padding: 13px;
+        font-size: 13px
+    }
+
+    /* Single product description tabs */
+    .woocommerce div.product .woocommerce-tabs ul.tabs li {
+        font-size: 10px;
+    }
+    
+    /* Single product description heading */
+    .woocommerce-Tabs-panel--description h2{
+        font-size: 22px;
+    }
+
+    /* Single product description paragraph */
+    .woocommerce-Tabs-panel--description p {
+        font-size: 11px;
+    }    
+
+    /* Single product add to cart button */
+    .woocommerce ul.products li.product .button {
+        font-size: 13px;
+    }
+
+    /* Single product related products section  */
+    .woocommerce ul.products li.product a,
+    .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* image slider nav images */
+    .woocommerce div.product div.images .flex-control-thumbs li img {
+        width: 50px;
+        height: 50px !important;
+    }
+
+    /* image slider nav */
+    .flex-control-thumbs {
+        display: flex;
+    }
+}
+
