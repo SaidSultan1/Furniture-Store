@@ -36,19 +36,19 @@
 
 /* Primary Button */
 .primary-btn {
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 13px;
     font-weight: 900;
     line-height: 42px;
     padding: 16px 20px;
     text-transform: uppercase;
     vertical-align: top;
-    background: #e73b49;
+    background: var(--color-red);
 }
 
 /* Primary Button Hover */
 .primary-btn:hover {
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 /* Slider btn */
@@ -75,13 +75,13 @@
 .lf-home-banner .owl-dots .owl-dot {
     width: 12px;
     height: 12px;
-    background-color: #ffffff;
+    background-color:var(--color-white);
     border-radius: 50%;
 }
 
 /* Carousel Dot Active button  */
 .lf-home-banner .owl-dots .active {
-    background-color: #e73b49;
+    background-color: var(--color-red);
 }
 
 /* home product container  */
@@ -109,7 +109,7 @@
 /* Proudct heading border */
 .product-category-heading::after,
 .product-heading h1::after {
-    background: #e73b49;
+    background: var(--color-red);
     bottom: 24px;
     content: "";
     height: 2px;
@@ -291,10 +291,10 @@
 .product-category-name {
     position: absolute;
     padding: 12px;
-    background: #e73b49;
+    background: var(--color-red);
     font-size: 16px;
     font-weight: 700;
-    color: #ffff;
+    color: var(--color-white);
     border-radius: 12px;
     top: 50%;
     left: 50%;
@@ -302,7 +302,7 @@
 } 
 
 .product-category-name:hover {
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .product-category-heading {
@@ -312,7 +312,7 @@
 }
 
 .product-category-heading::before {
-    background: #e1e1e1 none repeat scroll 0 0;
+    background: #e1e1e1;
     bottom: 33px;
     content: "";
     height: 1px;
@@ -322,7 +322,7 @@
     top: 60px;
 }
 .product-category-heading::after {
-    background: #e73b49;
+    background: var(--color-red);
     content: "";
     height: 2px;
     left: 0;

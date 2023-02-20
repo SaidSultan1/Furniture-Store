@@ -27,19 +27,19 @@
 /* footer bottom copyright section */
 .footer-bottom {
     width: 100%;
-    background: #25241d none repeat scroll 0 0;
+    background: #25241d;
     padding: 30px 0;
 }
 
 /* Footer copyright text */
 .copyright-text {
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 15px;
 }
 
 /* Footer left side description */
 .site-description {
-    color: #fff;
+    color: var(--color-white);
     line-height: 24px;
     margin-bottom: 20px;
     font-size: 15px;
@@ -57,7 +57,7 @@
 .phone,
 .email,
 .social-icons {
-    color: #ffffff;
+    color: var(--color-white);
     display: block;
     line-height: 25px;
     margin-bottom: 15px;
@@ -66,7 +66,7 @@
 
 /* Footer menu headins */
 .footer-menu-heading {
-    color: #ffffff;
+    color: var(--color-white);
     font-size: 16px;
     line-height: 22px;
     padding-bottom: 17px;
@@ -88,7 +88,7 @@
 
 /* Footer menu links */
 .footer-menu li a {
-    color: #ffffff !important;
+    color: var(--color-white) !important;
     text-transform: capitalize;
     transition: all .3s;
     font-size: 15px;
@@ -99,11 +99,9 @@
     padding:4px 0px !important;
 }
 
+.site-title:hover,
 .site-title {
-    color:#ffffff;
-}
-.site-title:hover {
-    color:#ffffff;
+    color: var(--color-white);
 }
 
 

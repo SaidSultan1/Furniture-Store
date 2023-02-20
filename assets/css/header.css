@@ -68,7 +68,7 @@
 .search-form {
     display: flex;
     flex-direction: row;
-    background-color: #f7f7f7;
+    background-color:var(--color-white);
 }
 
 /* Search Field Input */
@@ -143,12 +143,12 @@
 /* Hamburger menu icon */
 .nav-toggle i {
     font-size: 24px;
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 /* Nav menu heading */
 .nav-menu-heading {
-    color: #ffffff;
+    color: var(--color-white);
     font-weight: normal;
     margin-bottom: 0;
 }
@@ -200,7 +200,7 @@
     /* header nav menu item wrap */
     .nav-menu {
         flex-direction: column;
-        background: #ffff;
+        background:var(--color-white);
     }
 
     /* nav items */
