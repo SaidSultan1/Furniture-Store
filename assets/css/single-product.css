@@ -1,5 +1,5 @@
 /* Single proudct main container */
-.lf-single-product-container {
+.lf-single-product-container .content-area{
     max-width: 1200px;
     margin: auto;
     padding: 30px;
@@ -39,6 +39,11 @@
 /* cart form variations  */
 .woocommerce div.product form.cart .variations {
     text-align: left;
+}
+
+.woocommerce div.product div.images img {
+    width: 55%;
+    margin: auto;
 }
 
 /* cart form variation dropdown */
