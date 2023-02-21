@@ -38,6 +38,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./assets/css/single-blog-and-page.css":
+/*!*********************************************!*\
+  !*** ./assets/css/single-blog-and-page.css ***!
+  \*********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./assets/css/single-product.css":
 /*!***************************************!*\
   !*** ./assets/css/single-product.css ***!
@@ -100,6 +112,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_css_footer_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/css/footer.css */ "./assets/css/footer.css");
 /* harmony import */ var _assets_css_front_page_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/css/front-page.css */ "./assets/css/front-page.css");
 /* harmony import */ var _assets_css_single_product_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/css/single-product.css */ "./assets/css/single-product.css");
+/* harmony import */ var _assets_css_single_blog_and_page_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/css/single-blog-and-page.css */ "./assets/css/single-blog-and-page.css");
+
 
 
 

@@ -946,5 +946,122 @@
 }
 
 
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/css/single-blog-and-page.css ***!
+  \*****************************************************************************************************************************************************************************************/
+/* Single page main container */
+.content-container {
+    max-width: 1200px;
+    margin: auto;
+    padding:20px 30px;
+}
+
+/* Cart table head background color */
+.shop_table_responsive thead tr {
+    background-color: #E4E4E4;
+}
+
+/* Cart remove product item icon */
+.product-remove a.remove {
+    border: 1px solid var(--color-black);
+    color: black !important;
+    font-weight: 400;
+}
+
+/* Cart remove product item icon hover */
+.product-remove a:hover {
+    background-color: var(--color-black) !important;
+    color: var(--color-white);
+}
+
+/* Cart remove product item icon */
+.shop_table tbody .product-remove {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding: 50px 0px 50px 12px !important;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+/* Cart product thumbnail */
+.product-thumbnail {
+    width: 100px !important;
+}
+
+.product-thumbnail a img, 
+.product-thumbnail a {
+    width: 100% !important  ;
+}
+
+/* Product name and variation in cart table */
+.woocommerce-cart-form__cart-item.cart_item .product-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 21px !important;
+    padding-bottom: 21px !important;
+}
+
+.product-name .variation {
+    font-size: 14px;
+    width: 45%;
+}
+
+/* Product name title */
+.product-name a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*  Product name and variation in cart table */
+.woocommerce-cart-form__cart-item {
+    border-top: 1px solid rgba(0,0,0,.1) !important;
+}
+
+/* Product table border on last 3 td */
+.woocommerce-cart-form__cart-item td:nth-last-child(-n+3) {
+    border-left: 1px solid #ccc;
+}
+
+/* Product price  */
+.woocommerce-cart-form__cart-item .product-price .woocommerce-Price-amount {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+/* Product quantity set */
+.product-quantity .quantity input{
+    padding: 6px;
+    font-size: 16px;
+}
+
+/* Cart Coupen input and button */
+.shop_table.shop_table_responsive tbody tr:last-child td .coupon {
+    width: 50%;
+    display: flex;
+}
+
+
+.shop_table.shop_table_responsive tbody tr:last-child td .coupon input {
+    width: 45%;
+}
+
+/* Checkout button and coupen button */
+.wc-proceed-to-checkout a.checkout-button,
+.shop_table.shop_table_responsive tbody tr:last-child td .coupon button {
+    padding: 15px 25px !important;
+    border-radius: 30px !important;
+    background-color: var(--color-lightgreen) !important;
+    color: var(--color-white) !important;
+}
+
+/* Check out table container */
+.wc-proceed-to-checkout {
+    display: flex;
+    max-width: 100%;
+    justify-content: end;
+}
 
 /*# sourceMappingURL=index.css.map*/
