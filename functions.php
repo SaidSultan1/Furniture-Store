@@ -89,4 +89,22 @@ function remove_woocommerce_default_content() {
   }
 }
 add_action( 'template_redirect', 'remove_woocommerce_default_content' );
+add_theme_support( 'post-thumbnails' );
 
+register_sidebar(
+    array(
+      'name' => 'Sidebar Location',
+      'id' => 'sidebar'
+    )
+);
+
+// Add user avatar to my account page
+add_action( 'woocommerce_before_account_navigation', 'add_user_avatar_to_my_account_page', 5 );
+function add_user_avatar_to_my_account_page() {
+    if ( is_user_logged_in() ) {
+        $current_user = wp_get_current_user();
+        $avatar = get_avatar( $current_user->user_email, 50 );
+        $welcome = sprintf( __( 'Welcome, %s', 'woocommerce' ), '<strong>' . esc_html( $current_user->display_name ) . '</strong>' );
+        echo '<div class="user-avatar">' . $avatar . '</div><div class="welcome-msg">' . $welcome . '</div>';
+    }
+}
