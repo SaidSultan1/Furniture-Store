@@ -950,10 +950,10 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/css/single-blog-and-page.css ***!
   \*****************************************************************************************************************************************************************************************/
 /* Single page main container */
-.content-container {
+.lf-single-content {
     max-width: 1200px;
     margin: auto;
-    padding:20px 30px;
+    padding: 20px 30px;
 }
 
 /* Cart table head background color */
@@ -981,7 +981,7 @@
     padding: 50px 0px 50px 12px !important;
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
 }
 
 /* Cart product thumbnail */
@@ -989,9 +989,9 @@
     width: 100px !important;
 }
 
-.product-thumbnail a img, 
+.product-thumbnail a img,
 .product-thumbnail a {
-    width: 100% !important  ;
+    width: 100% !important;
 }
 
 /* Product name and variation in cart table */
@@ -1017,7 +1017,7 @@
 
 /*  Product name and variation in cart table */
 .woocommerce-cart-form__cart-item {
-    border-top: 1px solid rgba(0,0,0,.1) !important;
+    border-top: 1px solid rgba(0, 0, 0, .1) !important;
 }
 
 /* Product table border on last 3 td */
@@ -1032,7 +1032,7 @@
 }
 
 /* Product quantity set */
-.product-quantity .quantity input{
+.product-quantity .quantity input {
     padding: 6px;
     font-size: 16px;
 }
@@ -1062,6 +1062,166 @@
     display: flex;
     max-width: 100%;
     justify-content: end;
+}
+
+
+.single-container {
+    width: 100%;
+}
+
+.lf-banner-background {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.lf-banner-background::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the alpha value to adjust opacity */
+  }
+
+.lf-banner-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: left;
+    width: 1200px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0 ,-50%);
+}
+
+.lf-banner-title h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding: 40px 0 20px;
+}
+
+.lf-single-content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    display: flex;
+}
+
+.lf-single-content-right li {
+    list-style: none;
+}
+
+
+.widget_nav_menu .menu-footer-menu-container .menu li {
+    padding: 12px 0 ;
+    border-bottom: 1px solid white;
+}
+
+.lf-single-content-right {
+    background-color: #d3d3d3;
+}
+
+.lf-single-content-right {
+    width: 25%;
+    padding: 20px;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.post-feature-image {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.post-feature-image img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 400px;
+}
+
+.customer_details {
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    width: 92% !important;
+}
+
+.woocommerce-checkout-review-order-table {
+    margin-top: 80px !important;
+}
+
+form.woocommerce-checkout {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#order_review_heading {
+    position: absolute;
+    top: 4px;
+    right: 39%;
+}
+
+.woocommerce-MyAccount-navigation ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce-MyAccount-navigation ul li:last-child{
+    order: -1;
+    padding: 20px;
+    background-color:#ff0044;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.woocommerce-MyAccount-navigation ul li:last-child a {
+    color: var(--color-white);
+}
+
+
+.user-avatar img {
+    height: 100px !important;
+    width: 100px !important; 
+    -o-object-fit: cover !important; 
+       object-fit: cover !important;
+}
+
+.welcome-msg {
+    margin-bottom: 30px;
+}
+
+.woocommerce-MyAccount-navigation ul li a{
+    color: #ff0044;
+    margin-bottom: 10px;
+}
+
+.woocommerce-MyAccount-navigation ul li {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ff0044;
+    width: 80%;
 }
 
 /*# sourceMappingURL=index.css.map*/
