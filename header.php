@@ -11,8 +11,13 @@
             <div class="header-top">
                 <div class="header-top-left">
                     <ul>
-                        <li><a href="<?php echo esc_url(site_url(" /my-account ")) ?>">My Account</a></li>
-                        <li><a href="<?php echo esc_url(site_url(" /create-account ")) ?>">Create an Account</a></li>
+                        <?php
+                            if ( is_user_logged_in() ) { ?>
+                                <li><a href="<?php echo esc_url(site_url(" /my-account ")) ?>">My Account</a></li>
+                            <?php } else { ?>
+                                <li><a href="<?php echo esc_url(site_url(" /create-account ")) ?>">Create an Account</a></li>
+                            <?php }
+                        ?>
                     </ul>
                 </div>
                 <div class="header-top-right">
@@ -24,10 +29,7 @@
             </div>
             <div class="header-bottom">
                 <div class="header-bottom-left">
-                    <form class="search-form">
-                        <input type="text" class="search-field">
-                        <button class="search-btn"><i class="fa fa-search search-icon"></i></button>
-                    </form>
+                    <?php get_search_form(); ?>
                 </div>
                 <div class="header-bottom-center">
                     <div class="site-logo">
