@@ -1,26 +1,6 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./assets/js/header.js":
-/*!*****************************!*\
-  !*** ./assets/js/header.js ***!
-  \*****************************/
-/***/ (function() {
-
-document.addEventListener("DOMContentLoaded", function () {
-  var navToggle = document.querySelector('.nav-toggle');
-  var openMenu = document.querySelector('.header-nav');
-  navToggle.addEventListener("click", () => {
-    if (navToggle.firstElementChild.classList.contains("fa-bars")) {
-      navToggle.firstElementChild.classList.replace("fa-bars", "fa-times");
-    } else {
-      navToggle.firstElementChild.classList.replace("fa-times", "fa-bars");
-    }
-    openMenu.classList.toggle("header-nav-active");
-  });
-});
-
-/***/ }),
 
 /***/ "./assets/css/footer.css":
 /*!*******************************!*\
@@ -28,7 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
   \*******************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./assets/css/front-page.css":
+/*!***********************************!*\
+  !*** ./assets/css/front-page.css ***!
+  \***********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -41,7 +32,6 @@ __webpack_require__.r(__webpack_exports__);
   \*******************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -75,35 +65,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
-/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	!function() {
 /******/ 		// define __esModule on exports
@@ -117,17 +78,15 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_css_header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/css/header.css */ "./assets/css/header.css");
 /* harmony import */ var _assets_css_footer_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/css/footer.css */ "./assets/css/footer.css");
-/* harmony import */ var _assets_js_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/js/header */ "./assets/js/header.js");
-/* harmony import */ var _assets_js_header__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_js_header__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_css_front_page_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/css/front-page.css */ "./assets/css/front-page.css");
 
 
 
